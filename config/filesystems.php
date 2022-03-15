@@ -17,6 +17,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Default Cloud Filesystem Disk
+    |--------------------------------------------------------------------------
+    |
+    | Many applications store files both locally and in the cloud. For this
+    | reason, you may specify a default "cloud" driver here. This driver
+    | will be bound as the Cloud disk implementation in the container.
+    |
+    */
+
+    'cloud' => env('FILESYSTEM_CLOUD', 's3'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Filesystem Disks
     |--------------------------------------------------------------------------
     |
@@ -51,6 +64,28 @@ return [
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
+            // 'visibility' => 'public', // https://statamic.dev/assets#visibility
+        ],
+
+        'assets' => [
+            'driver' => 'local',
+            'root' => public_path('assets'),
+            'url' => '/assets',
+            'visibility' => 'public',
+        ],
+
+        'favicons' => [
+            'driver' => 'local',
+            'root' => public_path('favicons'),
+            'url' => '/favicons',
+            'visibility' => 'public',
+        ],
+
+        'social_images' => [
+            'driver' => 'local',
+            'root' => public_path('social_images'),
+            'url' => '/social_images',
+            'visibility' => 'public',
         ],
 
     ],

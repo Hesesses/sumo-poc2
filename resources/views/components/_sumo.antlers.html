@@ -1,0 +1,22 @@
+{{#
+@name Video
+@desc The video component. A sizeable YouTube or Vimeo video rendered in a responsive container with an optional caption.
+@set page.article.video
+#}}
+
+<!-- /components/_video.antlers.html -->
+<div>
+    <figure class="size-{{ size }} my-4">
+        {{
+        partial:components/picture
+        :image="image"
+        class="w-full"
+        cover="false"
+        lazy="true"
+        :sizes="view:sizes['{size}']"
+        }}
+
+        {{ partial:typography/caption as="figcaption" }}
+    </figure>
+</div>
+<!-- End: /components/_video.antlers.html -->

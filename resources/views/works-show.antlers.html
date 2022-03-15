@@ -1,0 +1,26 @@
+{{#
+	@name Default
+	@desc The default template with an outer wrapper grid as defined in tailwind.config.js. It makes sure all blocks on a page get evenly spaced without having to worry about margins or paddings.
+#}}
+
+<!-- /default.antlers.html -->
+<main class="outer-grid" id="content">
+    {{ runway:work with="user|comments" where="slug:{slug}" }}
+    <div class="my-2 p-4 border">
+        <div class="">{{ id }} {{ slug }} {{ type }}</div>
+        <div>{{ data }}</div>
+        <p>By {{ user:name }}</p>
+
+        <div class="pl-5">
+            {{ comments }}
+            <div>{{ text }}</div>
+            {{ /comments }}
+        </div>
+
+        <div>
+            {{ livewire:add-comment :workId="id" }}
+        </div>
+    </div>
+    {{ /runway:work }}
+</main>
+<!-- End: /default.antlers.html -->

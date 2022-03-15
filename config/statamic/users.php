@@ -46,7 +46,7 @@ return [
     |
     */
 
-    'avatars' => 'initials',
+    'avatars' => 'gravatar',
 
     /*
     |--------------------------------------------------------------------------
@@ -59,20 +59,6 @@ return [
     */
 
     'new_user_roles' => [
-        //
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | New User Groups
-    |--------------------------------------------------------------------------
-    |
-    | When registering new users through the user:register_form tag, these
-    | groups will automatically be applied to your newly created users.
-    |
-    */
-
-    'new_user_groups' => [
         //
     ],
 
@@ -94,20 +80,14 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Database
+    | DB Connection
     |--------------------------------------------------------------------------
     |
-    | Here you may configure the database connection and its table names.
+    | Default database connection.
     |
     */
 
     'database' => config('database.default'),
-
-    'tables' => [
-        'users' => 'users',
-        'role_user' => 'role_user',
-        'group_user' => 'group_user',
-    ],
 
     /*
     |--------------------------------------------------------------------------

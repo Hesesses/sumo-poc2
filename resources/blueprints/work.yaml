@@ -1,0 +1,39 @@
+sections:
+  main:
+    fields:
+      -
+        handle: user_id
+        field:
+          type: integer
+          display: UserId
+          validate: required
+      -
+        handle: type
+        field:
+          type: text
+          display: Type
+          validate: required
+      -
+        handle: data
+        field:
+          type: textarea
+          display: Data
+          validate: required
+  sidebar:
+    fields:
+      -
+        handle: slug
+        field:
+          type: text
+          display: Slug
+          validate: required
+      -
+        handle: created_at
+        field:
+          type: date
+          display: CreatedAt
+      -
+        handle: updated_at
+        field:
+          type: date
+          display: UpdatedAt

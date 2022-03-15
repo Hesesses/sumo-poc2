@@ -1,0 +1,82 @@
+title: sumo
+fields:
+  -
+    handle: description
+    field:
+      always_show_set_button: false
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      antlers: false
+      display: description
+      type: bard
+      icon: bard
+      listable: hidden
+      instructions_position: above
+  -
+    handle: image
+    field:
+      mode: list
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 1
+      display: image
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      container: assets
+  -
+    handle: birthdate
+    field:
+      mode: single
+      time_enabled: false
+      time_required: false
+      full_width: false
+      inline: false
+      columns: 1
+      rows: 1
+      display: birthdate
+      type: date
+      icon: date
+      listable: hidden
+      instructions_position: above
+  -
+    handle: fav_product
+    field:
+      options:
+        paint: null
+        3d: null
+        pixel: null
+      multiple: true
+      max_items: 2
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: 'fav product'
+      type: select
+      icon: select
+      listable: hidden
+      instructions_position: above
