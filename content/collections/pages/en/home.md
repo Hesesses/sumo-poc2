@@ -2,14 +2,53 @@
 id: home
 blueprint: page
 title: Home
-updated_by: 80802917-8d90-4324-9d46-03c0930abb63
-updated_at: 1636186813
+updated_by: 1
+updated_at: 1647430208
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 page_builder:
+  -
+    type: hero_laptop
+    enabled: true
+  -
+    sub_title: 'A POWERFUL SUITE'
+    title: 'UNLEASHING YOUR CREATIVITY'
+    description:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Your creativity comes from your imagination, which has no limits. No need for expensive downloads, all you need is an internet access. That''s why we built Sumopaint, Sumotunes, Sumo3D, Sumocode, Sumophoto, Sumoaudio, Sumovideo and Sumopixel: so everyone can believe in their own creativity! Each app in our cloud suite is gamified, easy to learn and even easier to teach, because we want everyone to have the opportunity to access their imagination and start creating.'
+    type: divider_basic
+    enabled: true
+  -
+    image: a-peak.jpg
+    image_right: true
+    features:
+      -
+        title: eka
+        description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'eka eka eka'
+      -
+        title: toka
+        description:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: toka
+    type: features_with_image
+    enabled: true
   -
     article:
       -
@@ -50,13 +89,7 @@ page_builder:
         target_blank: false
         link_type: entry
         entry: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
-        url: null
-        email: null
-        tel: null
-        asset: null
         button_type: inline
-        attr_title: null
-        attr_aria: null
         show_controls: false
       -
         title: 'Long form content'
@@ -65,13 +98,7 @@ page_builder:
         target_blank: false
         link_type: entry
         entry: 20f6a148-63b8-47a8-9b0e-d57095d78c21
-        url: null
-        email: null
-        tel: null
-        asset: null
         button_type: inline
-        attr_title: null
-        attr_aria: null
         show_controls: false
       -
         title: 'Way more features'
@@ -79,15 +106,22 @@ page_builder:
         label: 'Scavenge the docs'
         target_blank: true
         link_type: url
-        entry: null
         url: 'https://peak.studio1902.nl/'
-        email: null
-        tel: null
-        asset: null
         button_type: inline
-        attr_title: null
-        attr_aria: null
         show_controls: false
     type: link_blocks
+    enabled: true
+  -
+    title: 'UNLEASH MORE CREATIVE POWER'
+    description:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Enjoy an online image editor, photo editor, audio editor, video editor, music studio, code studio, pixel editor and 3D studio for only $9 / month.'
+    link_text: 'Subscribe Pro'
+    link: 'entry::5c526dbf-9dd7-4c52-98d8-54e00ebddfb6'
+    type: divider_with_link
     enabled: true
 ---

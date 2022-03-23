@@ -1,0 +1,47 @@
+<section class="bg-gray-800 text-center py-24 px-10 r-xl:px-10 r-md:px-5 w-full bg-size-full bg-no-repeat" style="background-image: url(/images/home-section-1.svg)">
+	{{ if image_right }}
+		<div class="grid grid-cols-2 grid-cols-1 flex flex-col-reverse max-w-7xl m-auto mt-20">
+			<div>
+				{{ features }}
+					<div class="text-left max-w-xl my-10 w-full">
+						<img class="w-10 h-10 my-5" src="/images/home-createshare.svg" alt="Create and share your work">
+						<h3 class="text-white text-2xl m-0">{{ title }}</h3>
+						<div class="text-left text-xl w-full my-5 text-gray-400">{{ description }}</div>
+					</div>
+				{{ /features }}
+			</div>
+			<div class="overflow-hidden">
+				{{
+				partial:components/picture
+				:image="image"
+				class="w-full"
+				cover="false"
+				lazy="true"
+				:sizes="view:sizes['{size}']"
+				}}
+			</div>
+<!--			<img src="{{ image:url }}" class="home-macbook" data-aos="fade-right" style="max-width:1500px" alt="Sumo Apps on a laptop">-->
+		</div>
+	{{ else }}
+		<div class="grid grid-cols-2 r-md:grid-cols-1 r-md:flex r-md:flex-col max-w-7xl m-auto mt-20 pb-30">
+<!--			<img src="{{ image:url }}" class="relative right-32 r-md:right-0 home-ipad" data-aos="fade-left" alt="Sumo Apps in tablet">-->
+			{{
+			partial:components/picture
+			:image="image"
+			class="w-full relative right-32 r-md:right-0 home-ipad"
+			cover="false"
+			lazy="true"
+			:sizes="view:sizes['{size}']"
+			}}
+			<div>
+				{{ features }}
+				<div class="text-left max-w-xl my-10 w-full">
+					<img class="w-10 h-10 my-5" src="/images/home-createshare.svg" alt="Create and share your work">
+					<h3 class="text-white text-2xl m-0">{{ title }}</h3>
+					<div class="text-left text-xl w-full my-5 text-gray-400">{{ description }}</div>
+				</div>
+				{{ /features }}
+			</div>
+		</div>
+	{{ /if }}
+</section>

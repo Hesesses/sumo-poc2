@@ -45,4 +45,24 @@ fields:
           fields:
             -
               import: sumo
+        hero_laptop:
+          display: 'Hero Laptop'
+          fields:
+            -
+              import: hero_laptop
+        divider_basic:
+          display: 'Divider Basic'
+          fields:
+            -
+              import: divider_basic
+        features_with_image:
+          display: 'Features with image'
+          fields:
+            -
+              import: features_with_image
+        divider_with_link:
+          display: 'Divider with link'
+          fields:
+            -
+              import: divider_subscribe_pro
       instructions_position: above
